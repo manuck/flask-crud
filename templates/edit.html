@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+회원 수정
+{% endblock %}
+
+{% block body %}
+    <form action='/users/update/{{user.id}}', method="POST">
+        username : <input type="text" name="username" value="{{user.username}}"> <br>
+        email : <input type="email" name="email" value="{{user.email}}"> <br>
+        <input type="submit" value = "수정">
+    </form>
+
+{% endblock %}

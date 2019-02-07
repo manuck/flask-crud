@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+회원 명부
+{% endblock %}
+
+{% block body %}
+
+<h1>{{user.id}}: {{user.username}}</h1>
+<p>{{user.email}}</p>
+<p>{{user.created_at}}</p>
+
+{% endblock %}
